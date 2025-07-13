@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tropi Graze Farm - Products and Services</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+		}
+		.grid-item {
+			background-color: #f0f0f0;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="products.html"> Products </a></li>
+				 <li><a href="inside.html"> Inside Tropi</a></li>
+				 <li><a href="contact.html">Contact us</a></li>
+			</ul>
+			</nav>
+			<nav>
+				<a href="inside.html" style="float: right;">Next Page</a>
+				<a href="about.html">Previous</a>
+			</nav>
+	</header>
+	<main>
+		<h1>Products</h1>
+		<div class="grid-container">
+			<div class="grid-item" >
+				<img src="_images/pig.JPG" width="300" height="300" alt="Pig"
+				onclick="openLightbox( '_images/pig.JPG')">
+				<h2>Pigs</h2>
+				<p>kinder to sow </p>
+			</div>
+			<div class="grid-item"  onclick="openLightbox( '_images/goat.jpg')">
+				<img src="_images/goat.jpg" width="300" height="300" 
+				onclick="openLightbox( '_images/goat.jpg')">
+				<h2>Goats</h2>
+				<p>Quality breeds</p>
+			</div>
+			<div class="grid-item">
+				<img src="_images/fish.JPG" width="300" height="300"
+				onclick="openLightbox('_images/fish.JPG')">
+				<h2>Fish</h2>
+				<p>Fresh fish </p>
+			</div>
+			<div class="grid-item" >
+				<img src="_images/bananaz.JPG" width="300" height="300"
+				onclick="openLightbox('_images/bananaz.JPG')">
+				<h2>Bananas</h2>
+				<p>Fresh and firm </p>
+			</div>
+			<div class="grid-item">
+				<img src="_images/grapes.JPG" width="300" height="300"
+				onclick="openLightbox('_images/grapes.JPG')">
+				<h2> Grapes</h2>
+				<p>Juicy and sweet</p>
+			</div>
+			<div class="grid-item" >
+				<img src="_images/Peas.JPG" width="300" height="300S"
+				onclick="openLightbox('_images/Peas.JPG')">
+				<h2>Peas</h2>
+				<p> soft and flavourful</p>
+			</div>
+			
+<!--lightbox structure-->
+			<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+	
+				<span id="lightbox-close" style="position: absolute; top: 10px; font-size: 24;  
+				color:black pointer; 
+				right: 20px;"    onclick= "closeLightbox()">x</span>
+				<img id="lightbox-image" src="" alt="enlarged product image" 
+				style="max-width: 90%; max-height: 90%;">
+				
+	
+			</div>
+		</div>
+		</div>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>
